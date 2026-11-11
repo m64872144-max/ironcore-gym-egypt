@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IronCore Gym Egypt | Register & Contact</title>
+    <!-- Bootstrap 5 CSS (For Bonus Points) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom External CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="custom-header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html">IronCore Egypt</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#gymNav" aria-controls="gymNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="gymNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About & Trainers</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pricing.html">Schedule & Pricing</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="contact.html">Join Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <div class="form-wrapper">
+            <h1 class="text-center mb-3">Join IronCore Gym Egypt</h1>
+            <p class="text-center text-muted mb-4">Complete the form below to claim your free pass & InBody test.</p>
+
+            <form action="#" method="GET">
+                <div id="successMessage" class="alert alert-success d-none ">
+    Application submitted successfully!
+</div>
+                <p class="form-text">Please complete all required fields. This demonstration form validates input in the browser; it does not store or send applications.</p>
+                <!-- 1. Text Input -->
+                <div class="mb-3">
+                    <label for="fullName" class="form-label">Full Name:</label>
+                    <input type="text" class="form-control" id="fullName" name="fullName" placeholder="e.g. Mahmoud Ahmed" required>
+                </div>
+
+                <!-- 2. Email Input -->
+                <div class="mb-3">
+                    <label for="userEmail" class="form-label">Email Address:</label>
+                    <input type="email" class="form-control" id="userEmail" name="userEmail" placeholder="example@gmail.com" required>
+                </div>
+
+                <!-- 3. Password Input -->
+                <div class="mb-3">
+                    <label for="userPassword" class="form-label">Account Password:</label>
+                    <input type="password" class="form-control" id="userPassword" name="userPassword" placeholder="Minimum 8 characters" minlength="8" autocomplete="new-password" required>
+                </div>
+
+                <!-- 4. Number Input & 5. Date Input -->
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="userAge" class="form-label">Age (Years):</label>
+                        <input type="number" class="form-control" id="userAge" name="userAge" min="14" max="80" placeholder="e.g. 21" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="startDate" class="form-label">Starting Date:</label>
+                        <input type="date" class="form-control" id="startDate" name="startDate" required>
+                    </div>
+                </div>
+
+                <!-- 6. Radio Buttons -->
+                <div class="mb-3">
+                    <label class="form-label d-block">Gender:</label>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="genderMale" value="male" checked>
+                        <label class="form-check-label" for="genderMale">Male</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="genderFemale" value="female">
+                        <label class="form-check-label" for="genderFemale">Female (Eligible for ladies hours)</label>
+                    </div>
+                </div>
+
+                <!-- 7. Select Dropdown (Package & Branch) -->
+                <div class="mb-3">
+                    <label for="planSelect" class="form-label">Select Membership Package:</label>
+                    <select class="form-select" id="planSelect" name="planSelect" required>
+                        <option value="" selected disabled>Choose package...</option>
+                        <option value="monthly">Monthly Pass (350 EGP)</option>
+                        <option value="quarterly">3 Months Saver (900 EGP)</option>
+                        <option value="annual">Annual VIP (2,800 EGP)</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="branchSelect" class="form-label">Preferred Branch:</label>
+                    <select class="form-select" id="branchSelect" name="branchSelect" required>
+                        <option value="suez" selected>Suez Branch</option>
+                        <option value="cairo">Cairo Branch</option>
+                        <option value="alex">Alexandria Branch</option>
+                    </select>
+                </div>
+
+                <!-- 8. Checkboxes -->
+                <div class="mb-3">
+                    <label class="form-label d-block">Additional Add-ons:</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="privateLocker" name="amenities" value="locker">
+                        <label class="form-check-label" for="privateLocker">Private Locker (+50 EGP/mo)</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="saunaAccess" name="amenities" value="sauna">
+                        <label class="form-check-label" for="saunaAccess">Sauna & Jacuzzi Access</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="dietPlan" name="amenities" value="diet">
+                        <label class="form-check-label" for="dietPlan">Personalized Dietary Nutrition Chart</label>
+                    </div>
+                </div>
+
+                <!-- 9. Textarea -->
+                <div class="mb-4">
+                    <label for="fitnessGoal" class="form-label">Fitness Goals or Medical History:</label>
+                    <textarea class="form-control" id="fitnessGoal" name="fitnessGoal" rows="3" placeholder="Tell us about your fitness targets (bulking, cutting) or past injuries..."></textarea>
+                </div>
+
+                <!-- 10. Submit Button -->
+                <button type="submit" class="btn btn-primary btn-lg w-100">Submit Application</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 IronCore Fitness Egypt. Branches in Suez, Cairo & Alexandria. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
